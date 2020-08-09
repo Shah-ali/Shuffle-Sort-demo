@@ -1,0 +1,167 @@
+/*-------------------------
+  Simple reset
+--------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*-------------------------
+  General Styles
+--------------------------*/
+body{
+	font-family: sans-serif;
+	background-color: #efefef;
+}
+
+a, a:visited {
+	outline:none;
+	color:#389dc1;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside, nav{
+	display: block;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	background-color: #fff;
+}
+
+.header, .sign {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	font-size: 12px;
+}
+
+.cards-section {
+	display: flex;
+	flex-direction: row;
+}
+
+.all-cards {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 5px;
+	border: 1px solid #fff;
+	width: 100%;
+}
+
+.btn {
+	display: block;
+	min-width: 100px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.btn:hover {
+	color: #fff;
+	background-color: #2b8ead;
+	border-color: #2b8ead;
+}
+
+.btn-primary,
+.btn:focus {
+	color: white;
+	background-color: #72c3dc;
+	border: #72c3dc;
+	border-radius: 5px;
+	box-shadow: 0px 3px #2b8ead;
+}
+
+.all-cards div {
+	min-height: 197px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 4em;
+}
+
+.c-1, .c-8 {
+  background: #6f98a8;
+}
+
+.c-2, .c-4 {
+  background: #2b8ead;
+}
+
+.c-3, .c-5, .c-9 {
+  background: #2f454e;
+}
+
+.c-6, .c-7 {
+  background: #bfbfbf;
+}
+
+@media screen and (max-width: 580px) {
+	html, body {
+		background-color: #fff;
+	}
+
+	.main-container {
+		border: 7px solid black;
+	}
+
+	.header {
+		background-color: #333333;
+		color: white;
+	}
+
+	.cards-section {
+		flex-direction: column-reverse;
+	}
+
+	.button-section {
+		justify-content: center;
+		display: flex;
+	}
+
+	.button-section .btn {
+		display: inline;
+		padding: 10px;
+		text-transform: uppercase;
+	}
+
+	.all-cards {
+		grid-template-columns: auto;
+		width: auto;
+	}
+
+	.all-cards div {
+		min-height: 50px;
+		color: #000;
+		font-size: 1em;
+		background-color: #efefef;
+		border-radius: 3px;
+		margin: 3px;
+	}
+
+	.c-1, .c-8 {
+		border-left: 5px solid #6f98a8;
+  	}
+
+	.c-2, .c-4 {
+		border-left: 5px solid #2b8ead;
+	}
+
+	.c-3, .c-5, .c-9 {
+		border-left: 5px solid #2f454e;
+	}
+
+	.c-6, .c-7 {
+		border-left: 5px solid #bfbfbf;
+	}
+}
